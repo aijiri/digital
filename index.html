@@ -1,0 +1,484 @@
+\<\!DOCTYPE html\>  
+\<html lang="en"\>  
+\<head\>  
+\<meta charset="UTF-8"\>  
+\<meta name="viewport" content="width=device-width, initial-scale=1.0"\>  
+\<title\>Amelia Ijiri | Practice \&amp; Portfolio\</title\>
+
+\<\!-- External CSS: Google Fonts (used by the Practice Page section) \--\>  
+\<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400\&display=swap" rel="stylesheet"\>
+
+\<style\>  
+  \* {  
+    box-sizing: border-box;  
+  }
+
+  body {  
+    margin: 0;  
+  }
+
+  /\* \============================================================  
+     SECTION 1: PRACTICE PAGE  
+     (image / table / form / iframe fixes exercise)  
+     All selectors are scoped under .practice-page so they never  
+     collide with the portfolio section's styles below.  
+     \============================================================ \*/
+
+  .practice-page {  
+    background-color: \#F5F0E8;  
+    color: \#2C2A3A;  
+    font-family: 'Noto Serif JP', serif;  
+    max-width: 800px;  
+    margin: 0 auto;  
+    padding: 2rem;  
+  }
+
+  .practice-page h1 {  
+    font-family: 'Noto Serif JP', serif;  
+    font-size: 1.8rem;  
+    color: \#2C2A3A;  
+    margin-bottom: 0.25rem;  
+  }
+
+  .practice-page .section-label {  
+    color: \#6B8FA3;  
+    font-size: 0.85rem;  
+    letter-spacing: 1px;  
+    text-transform: uppercase;  
+    margin-bottom: 2rem;  
+  }
+
+  .practice-page h2 {  
+    color: \#6B8FA3;  
+    border-bottom: 1px solid \#C5BDAF;  
+    padding-bottom: 0.3rem;  
+    margin: 2rem 0 1rem;  
+  }
+
+  .practice-page img {  
+    max-width: 360px;  
+    border: 3px solid \#C5BDAF;  
+    border-radius: 4px;  
+    display: block;  
+    margin-bottom: 1rem;  
+  }
+
+  .practice-page table {  
+    width: 100%;  
+    border-collapse: collapse;  
+  }
+
+  .practice-page thead {  
+    background-color: \#6B8FA3;  
+    color: \#ffffff;  
+  }
+
+  .practice-page th,  
+  .practice-page td {  
+    padding: 0.6rem 1rem;  
+    text-align: left;  
+    border: 1px solid \#C5BDAF;  
+  }
+
+  .practice-page tbody tr:nth-child(even) {  
+    background-color: \#E8EDF0;  
+  }
+
+  .practice-page form {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 0.5rem;  
+    max-width: 400px;  
+  }
+
+  .practice-page label {  
+    color: \#6B8FA3;  
+    font-size: 0.9rem;  
+    margin-top: 0.4rem;  
+  }
+
+  .practice-page input,  
+  .practice-page select {  
+    padding: 0.5rem;  
+    border: 1px solid \#C5BDAF;  
+    border-radius: 3px;  
+    font-family: inherit;  
+  }
+
+  .practice-page button\[type="submit"\] {  
+    margin-top: 0.5rem;  
+    padding: 0.5rem 1.2rem;  
+    background-color: \#C97B4B;  
+    color: \#ffffff;  
+    border: none;  
+    border-radius: 3px;  
+    cursor: pointer;  
+    align-self: flex-start;  
+    font-family: inherit;  
+  }
+
+  .practice-page iframe {  
+    display: block;  
+    width: 100%;  
+    border: 2px solid \#C5BDAF;  
+    border-radius: 4px;  
+    margin-bottom: 1.5rem;  
+  }
+
+  .practice-page .video-wrap {  
+    position: relative;  
+    width: 100%;  
+    padding-bottom: 56.25%;  
+    height: 0;  
+  }
+
+  .practice-page .video-wrap iframe {  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+  }
+
+  /\* \============================================================  
+     SECTION 2: PORTFOLIO PAGE  
+     (Duckett Ch. 12-14 assignment)  
+     Palette: dark green \#3c8453, sandy beige \#bcaa96,  
+              dark gray \#222222, light gray \#d3d4d6, off-white \#f6f6f6  
+     \============================================================ \*/
+
+  .portfolio-page {  
+    background-color: \#f6f6f6;  
+    font-family: 'Helvetica Neue', Arial, sans-serif;  
+    color: \#222222;  
+    line-height: 1.6;  
+    padding-bottom: 20px;  
+  }
+
+  /\* \--- 1\. TEXT PROPERTIES \--- \*/  
+  .portfolio-page h1,  
+  .portfolio-page h2,  
+  .portfolio-page h3 {  
+    font-family: Georgia, 'Times New Roman', serif;  
+    color: \#3c8453;  
+    font-weight: 700;  
+    letter-spacing: 0.5px;  
+  }
+
+  .portfolio-page h1 {  
+    font-size: 2.75rem;  
+    text-transform: uppercase;  
+    letter-spacing: 3px;  
+  }
+
+  .portfolio-page h2 {  
+    font-size: 1.5rem;  
+    border-bottom: 2px solid \#3c8453;  
+    padding-bottom: 6px;  
+    margin-bottom: 16px;  
+  }
+
+  .portfolio-page p {  
+    font-size: 1rem;  
+    color: \#222222;  
+  }
+
+  .portfolio-page .tagline {  
+    font-style: italic;  
+    font-size: 1.1rem;  
+    color: \#bcaa96;  
+    letter-spacing: 1px;  
+  }
+
+  .portfolio-page a {  
+    color: \#3c8453;  
+    text-decoration: none;  
+    font-weight: bold;  
+  }
+
+  .portfolio-page a:hover {  
+    text-decoration: underline;  
+    color: \#222222;  
+  }
+
+  /\* \--- 2\. BOXES \--- \*/  
+  .portfolio-page .container {  
+    max-width: 900px;  
+    margin: 0 auto;  
+    padding: 0 20px;  
+  }
+
+  .portfolio-page header.hero {  
+    background-color: \#3c8453;  
+    color: \#f6f6f6;  
+    padding: 60px 20px;  
+    text-align: center;  
+  }
+
+  .portfolio-page header.hero h1 {  
+    color: \#f6f6f6;  
+  }
+
+  .portfolio-page .card {  
+    background-color: \#f6f6f6;  
+    border: 1px solid \#d3d4d6;  
+    border-radius: 12px;  
+    padding: 32px;  
+    margin: 30px 0;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);  
+  }
+
+  .portfolio-page .skills-box {  
+    background-color: \#d3d4d6;  
+    border-left: 6px solid \#3c8453;  
+    border-radius: 4px;  
+    padding: 24px 30px;  
+    margin: 30px 0;  
+  }
+
+  .portfolio-page footer {  
+    text-align: center;  
+    padding: 24px;  
+    background-color: \#222222;  
+    color: \#f6f6f6;  
+    margin-top: 40px;  
+    font-size: 0.9rem;  
+  }
+
+  /\* \--- 3\. LIST styled with CSS \--- \*/  
+  .portfolio-page .skills-box ul {  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 12px;  
+  }
+
+  .portfolio-page .skills-box li {  
+    background-color: \#3c8453;  
+    color: \#f6f6f6;  
+    padding: 8px 16px;  
+    border-radius: 20px;  
+    font-size: 0.9rem;  
+  }
+
+  /\* \--- 3b. FORM styled with CSS \--- \*/  
+  .portfolio-page .contact-form {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 16px;  
+  }
+
+  .portfolio-page .form-row {  
+    display: flex;  
+    flex-direction: column;  
+  }
+
+  .portfolio-page .form-row label {  
+    font-weight: bold;  
+    margin-bottom: 6px;  
+    color: \#3c8453;  
+  }
+
+  .portfolio-page input\[type="text"\],  
+  .portfolio-page input\[type="email"\],  
+  .portfolio-page textarea {  
+    padding: 10px 12px;  
+    border: 1px solid \#d3d4d6;  
+    border-radius: 5px;  
+    font-family: inherit;  
+    font-size: 1rem;  
+    background-color: \#ffffff;  
+  }
+
+  .portfolio-page input\[type="text"\]:focus,  
+  .portfolio-page input\[type="email"\]:focus,  
+  .portfolio-page textarea:focus {  
+    outline: none;  
+    border-color: \#3c8453;  
+    box-shadow: 0 0 0 3px rgba(60, 132, 83, 0.2);  
+  }
+
+  .portfolio-page textarea {  
+    resize: vertical;  
+    min-height: 100px;  
+  }
+
+  .portfolio-page button\[type="submit"\] {  
+    align-self: flex-start;  
+    background-color: \#3c8453;  
+    color: \#ffffff;  
+    border: none;  
+    padding: 12px 28px;  
+    border-radius: 6px;  
+    font-size: 1rem;  
+    font-weight: bold;  
+    cursor: pointer;  
+    transition: background-color 0.2s ease-in-out;  
+  }
+
+  .portfolio-page button\[type="submit"\]:hover {  
+    background-color: \#222222;  
+  }  
+\</style\>  
+\</head\>
+
+\<body\>
+
+  \<\!-- \============================================================  
+       SECTION 1: PRACTICE PAGE  
+       \============================================================ \--\>  
+  \<section class="practice-page"\>
+
+    \<h1\>Practice Page\</h1\>  
+    \<p class="section-label"\>HTML fixes exercise\</p\>
+
+    \<\!-- FIX 1: pngtree.com is a webpage, not an image file.  
+         src must end in .jpg or .png — replaced with real image files,  
+         and the second \<img\> tag now has its missing closing bracket. \--\>  
+    \<h2\>Image\</h2\>  
+    \<img src="bg-coffee-shop.jpg" alt="coffee shop" width="360"\>  
+    \<img src="bg-sunset-ocean.jpg" alt="sunset ocean" width="360"\>
+
+    \<\!-- No fixes needed in the table \--\>  
+    \<h2\>Score Table\</h2\>  
+    \<table\>  
+      \<thead\>  
+        \<tr\>  
+          \<th\>Name\</th\>  
+          \<th\>Country\</th\>  
+          \<th\>Score\</th\>  
+        \</tr\>  
+      \</thead\>  
+      \<tbody\>  
+        \<tr\>  
+          \<td\>Amelia\</td\>  
+          \<td\>Japan\</td\>  
+          \<td\>98\</td\>  
+        \</tr\>  
+        \<tr\>  
+          \<td\>Kenji\</td\>  
+          \<td\>USA\</td\>  
+          \<td\>87\</td\>  
+        \</tr\>  
+      \</tbody\>  
+    \</table\>
+
+    \<\!-- No fixes needed in the form \--\>  
+    \<h2\>Contact Form\</h2\>  
+    \<form action="/submit" method="post"\>  
+      \<label for="p-name"\>Your Name\</label\>  
+      \<input type="text" id="p-name" name="name"\>
+
+      \<label for="p-email"\>Email\</label\>  
+      \<input type="email" id="p-email" name="email"\>
+
+      \<label for="p-level"\>Level\</label\>  
+      \<select id="p-level" name="level"\>  
+        \<option value="beginner"\>Beginner\</option\>  
+        \<option value="advanced"\>Advanced\</option\>  
+      \</select\>
+
+      \<button type="submit"\>Send\</button\>  
+    \</form\>
+
+    \<\!-- FIX 2: Added title attribute (accessibility requirement) \--\>  
+    \<h2\>Embedded Page (KUFS)\</h2\>  
+    \<iframe  
+      src="https://gyouseki.kufs.ac.jp/kufshp/KgApp?resId=S001125\&Language=2"  
+      height="400"  
+      title="KUFS Faculty Research"  
+      frameborder="0"\>  
+    \</iframe\>
+
+    \<\!-- FIX 3: Added frameborder="0", made responsive with wrapper div \--\>  
+    \<h2\>YouTube Video\</h2\>  
+    \<div class="video-wrap"\>  
+      \<iframe  
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"  
+        title="YouTube video player"  
+        frameborder="0"  
+        allowfullscreen\>  
+      \</iframe\>  
+    \</div\>
+
+    \<\!-- FIX 4: Replaced the placeholder search-results URL with a real  
+         Google Maps embed URL for Kyoto, and added frameborder="0"  
+         and allowfullscreen. \--\>  
+    \<h2\>Google Map — Kyoto\</h2\>  
+    \<iframe  
+      src="https://www.google.com/maps?q=Kyoto,Japan\&output=embed"  
+      title="Map of Kyoto"  
+      frameborder="0"  
+      allowfullscreen\>  
+    \</iframe\>
+
+  \</section\>
+
+  \<\!-- \============================================================  
+       SECTION 2: PORTFOLIO PAGE (Duckett Ch. 12-14 assignment)  
+       \============================================================ \--\>  
+  \<section class="portfolio-page"\>
+
+    \<header class="hero"\>  
+      \<h1\>Amelia Ijiri\</h1\>  
+      \<p class="tagline"\>Digital Transformation Researcher \&amp; Educator\</p\>  
+    \</header\>
+
+    \<div class="container"\>
+
+      \<section class="card"\>  
+        \<h2\>About Me\</h2\>  
+        \<p\>  
+          I'm an Assistant Professor of Digital Transformation, researching  
+          generative AI, immersive learning, and critical digital pedagogy.  
+          This page was built to practice core CSS skills: styling text,  
+          building boxes, and shaping a list and a form with custom styles  
+          instead of default browser styling.  
+        \</p\>  
+      \</section\>
+
+      \<section class="skills-box"\>  
+        \<h2\>Skills\</h2\>  
+        \<ul\>  
+          \<li\>HTML5\</li\>  
+          \<li\>CSS3\</li\>  
+          \<li\>XR / Frame VR\</li\>  
+          \<li\>Instructional Design\</li\>  
+          \<li\>Qualitative Research\</li\>  
+        \</ul\>  
+      \</section\>
+
+      \<section class="card"\>  
+        \<h2\>Contact Me\</h2\>  
+        \<form class="contact-form" action="\#" method="post"\>  
+          \<div class="form-row"\>  
+            \<label for="pf-name"\>Name\</label\>  
+            \<input type="text" id="pf-name" name="name" placeholder="Your full name" required\>  
+          \</div\>
+
+          \<div class="form-row"\>  
+            \<label for="pf-email"\>Email\</label\>  
+            \<input type="email" id="pf-email" name="email" placeholder="you@example.com" required\>  
+          \</div\>
+
+          \<div class="form-row"\>  
+            \<label for="pf-message"\>Message\</label\>  
+            \<textarea id="pf-message" name="message" placeholder="Say hello..."\>\</textarea\>  
+          \</div\>
+
+          \<button type="submit"\>Send Message\</button\>  
+        \</form\>  
+      \</section\>
+
+    \</div\>
+
+    \<footer\>  
+      \<p\>\&copy; 2026 Amelia Ijiri. Built for a web design assignment.\</p\>  
+    \</footer\>
+
+  \</section\>
+
+\</body\>  
+\</html\>  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple Layout Example</title>
+<style>
+
+  /* Header sits on top, full width */
+  header {
+    background: #3c4a3e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Article holds the main text + image */
+  article {
+    padding: 1rem;
+  }
+
+  /* Float the image left, text wraps around it */
+  article img {
+    float: left;
+    width: 150px;
+    margin: 0 1rem 1rem 0;
+  }
+
+  /* Footer sits on bottom, full width */
+  footer {
+    background: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>My Page Title</h1>
+  </header>
+
+  <article>
+    <img src="https://placehold.co/150x150" alt="Placeholder image">
+    <p>
+      This is the main article text. Because the image above
+      has float: left applied, this paragraph wraps around it
+      instead of sitting below it. That's the "layout applied
+      to the image" part of the assignment.
+    </p>
+  </article>
+
+  <footer>
+    <p>&copy; 2026 My Page</p>
+  </footer>
+
+</body>
+</html>

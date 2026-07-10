@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>This is a title</title>
+<style>
+
+
+  /* Assignment define elements by CSS here did this with the header */
+  header 
+{
+    background: #3c4a3e;
+    color: red;
+    padding: 1rem;
+    text-align: center;
+  }
+
+
+  /* Adding an image and text around using CSS float*/
+  article {
+    padding: 1rem;
+  }
+  article img {
+    float: left;
+    width: 150px;
+    margin: 0 1rem 1rem 0;
+  }
+
+
+  /* This section holds information about the footer*/
+  footer {
+    background: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+
+</style>
+</head>
+<body>
+
+
+  <header>
+    <h1>This is a title </h1>
+  </header>
+
+
+  <article>
+    <img src="bg-home-office-studio.jpg ">
+    <p>
+     This would be some interesting text and the assignment is to wrap around the image.
+    </p>
+  </article>
+
+
+  <footer>
+    <p>&copy; 2026 This is an awesome footer by Amelia Ijiri</p>
+  </footer>
+
+
+</body>
+</html>

@@ -114,6 +114,7 @@
       background-color: #f6f6f6;
       padding: 15px 15px 15px 35px;
       border-left: 4px solid #29b6d8;
+      margin-left: 190px; /* image width (160px) + margin-right (15px) + a little breathing room */
     }
 
     /* ---------- WEEKLY LEARNING JOURNAL SECTION (submission form) ---------- */
@@ -189,38 +190,36 @@
       <p>[Short intro text about the video]</p>
 
       <div class="video-wrapper">
-        <!-- Replace VIDEO_ID with the real YouTube video ID -->
+        <!-- To change the video, replace the ID after /embed/ with a new YouTube video ID -->
         <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID"
-          title="Week __ Video"
+          src="https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID"
+          title="Module 5 Video"
           allowfullscreen>
         </iframe>
       </div>
     </article>
 
-    <!-- ---- WORKSHOP AN AI TOOL ---- -->
+    <!-- ---- WORKSHOP AN AI TOOL  CHANGE MODULE PICTURE HERE!!!!  ---- -->
     <article class="clearfix">
       <h2><span class="section-letter">B.</span>Workshop an AI Tool</h2>
 
-      <img
-        src="workshop-photo.jpg"
-        alt="[Describe the image]"
-        class="workshop-image">
+      <div class="workshop-header clearfix">
+        <img src="ModuleFiveImage.png" alt="[Module 5 image]" class="workshop-image">
+        <p class="workshop-intro">[Short intro to this week's AI tool and task]</p>
 
-      <p>[Short intro to this week's AI tool and task]</p>
-
-      <ol class="instructions-list">
-        <li>[Instruction step 1]</li>
-        <li>[Instruction step 2]</li>
-        <li>[Instruction step 3]</li>
-      </ol>
+        <ol class="instructions-list">
+          <li>[Instruction step 1]</li>
+          <li>[Instruction step 2]</li>
+          <li>[Instruction step 3]</li>
+        </ol>
+      </div>
 
     </article>
 
     <!-- ---- WRITE A REFLECTION ---- -->
     <article>
       <h2><span class="section-letter">C.</span>Write a Reflection</h2>
-      <p>Week 5: Do you think using generative AI to do your assignments is permitted in classrooms? Do you think there should be any conditions on using them? (at least 150 words, in your own words) <strong>(5 Points)</strong></p>
+      <p>Week 5: [Reflection prompt for this week] (at least 150 words, in your own words) <strong>(5 Points)</strong></p>
 
       <!--
         Beginner note: this form does not send data anywhere yet.
